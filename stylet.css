@@ -1,0 +1,147 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    margin: 20px;
+}
+
+/* Sección principal */
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-info {
+    max-width: 500px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-info img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-info h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.product-info p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.product-info .price {
+    font-size: 1.5em;
+    color: #2c8f2d;
+    margin-top: 10px;
+}
+
+.product-features, .purchase-form {
+    max-width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-features h3, .purchase-form h3 {
+    color: #333;
+}
+
+.product-features ul {
+    padding-left: 20px;
+}
+
+.purchase-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.purchase-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.purchase-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.purchase-form button {
+    background-color: #2c8f2d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.purchase-form button:hover {
+    background-color: #218a1f;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-info, .product-features, .purchase-form {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
